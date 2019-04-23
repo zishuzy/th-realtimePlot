@@ -7,7 +7,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("大哥翟宇的牛逼之作v0.1.1");
+    this->setWindowTitle("DMM4020 DigitMultimeter Plot v0.1.1");
     //qDebug() << QThread::currentThreadId();
     m_pCollectThread = new DataCollectionThread();
     connect(m_pCollectThread, &DataCollectionThread::fileOpenError, this, &MainWindow::fileOpenErrorSlot);
