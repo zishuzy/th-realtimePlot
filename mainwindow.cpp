@@ -4,6 +4,8 @@
 #include <QDebug>
 #include <float.h>
 
+#pragma execution_character_set("utf-8")
+
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
