@@ -120,7 +120,7 @@ void DataCollectionThread::set_startOrStop_slot(bool status)
 {
     m_runFlag = status;
     if (m_runFlag) {
-        QString cuDTstr = QDateTime::currentDateTime().toString("yyyy-MM-dd_hh:mm:ss");
+        QString cuDTstr = QDateTime::currentDateTime().toString("yyyy-MM-dd_hh-mm-ss");
         m_pFileLog->setFileName(QString("./log/%1.log").arg(cuDTstr));
         if (m_pFileLog->open(QIODevice::WriteOnly | QIODevice::Text)) {
             if (m_pSerialPort->open(QIODevice::ReadWrite)) {
